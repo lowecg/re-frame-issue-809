@@ -16,5 +16,5 @@
   (fn [db _]
     db))
 
-(deftest dispatching-race-condition-469-test
+(deftest will-hang-from-cli-run-809-test
   (is (nil? (rf/dispatch [::minimal]))))
